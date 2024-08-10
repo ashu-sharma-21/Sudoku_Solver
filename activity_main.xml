@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sudoku Solver"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:textColor="@android:color/black"/>
+
+    <!-- Sudoku Grid -->
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:alignmentMode="alignMargins"
+        android:columnCount="9"
+        android:rowCount="9"
+        android:layout_gravity="center">
+
+        <!-- EditText cells will be added programmatically in the Java code -->
+
+    </GridLayout>
+
+    <!-- Validate Button -->
+    <Button
+        android:id="@+id/btnValidate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Validate"
+        android:layout_below="@id/gridLayout"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"
+        android:background="@color/design_default_color_primary"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"/>
+
+    <!-- Solve Button -->
+    <Button
+        android:id="@+id/btnSolve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Solve"
+        android:layout_below="@id/gridLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"
+        android:background="@color/design_default_color_primary"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"/>
+
+</RelativeLayout>
